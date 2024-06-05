@@ -5,3 +5,95 @@
 body {
     font-family: "Epilogue", sans-serif;
 }
+
+@layer components {
+    /* ---------------------- Header ------------------------------------- */
+  .navigation {
+    @apply p-[1rem] pb-[4rem] lg:flex lg:justify-between lg:align-middle;
+  }
+  .navigation-wrapper {
+    @apply flex gap-[60px] justify-between align-middle
+  }
+
+  .logo-wrapper {
+    @apply my-auto;
+  }
+
+  .menu-btn {
+    @apply lg:hidden;
+  }
+
+  .links-wrapper {
+    @apply hidden lg:flex justify-center align-middle gap-[40px] my-auto;
+  }
+
+  .link {
+    @apply flex justify-center align-middle gap-1;
+  }
+
+  .login-wrapper {
+    @apply gap-4 hidden lg:flex;
+  }
+
+  .register-btn {
+    @apply bg-[#151515] rounded-lg text-[#FAFAFA] w-[104px] h-[42px];
+  }
+
+  .company {
+    @apply hidden lg:min-w-[116px] lg:max-w-[116px] lg:min-h-[128px] lg:max-h-[128px] lg:absolute lg:top-[40px] shadow-lg lg:left-[306px] lg:rounded-lg lg:flex lg:flex-col lg:justify-center lg:align-middle;
+  }
+
+  .company-list-item {
+    @apply list-none text-left pl-[25px];
+  }
+  .company-link {
+    @apply inline-block  text-left text-[14px] font-normal text-[#686868] leading-[16px];
+  }
+
+  .features {
+    @apply hidden lg:min-w-[116px] lg:max-w-[116px] lg:min-h-[128px] lg:absolute lg:top-[70px] lg:left-[113px] shadow-lg lg:rounded-lg lg:flex lg:flex-col lg:justify-start lg:align-middle;
+  }
+
+  .features-list-item {
+    @apply list-none flex justify-center align-middle gap-[15px] mb-4;
+  }
+
+  .features-link {
+    @apply inline-block text-[14px] font-normal text-[#686868] leading-[16px];
+  }
+    /* ---------------------- Main Content ------------------------------------- */
+  .main {
+    @apply lg:flex flex-row-reverse gap-5 lg:h-screen;
+  }
+  
+  .hero-wrapper {
+    @apply w-full lg:pr-[130px] lg:w-[50%] my-auto;
+  }
+
+  .hero-img {
+    @apply inline-block w-full my-auto;
+  }
+
+  .main-content {
+    @apply px-[1rem] pt-[2.984375rem] flex flex-col justify-center align-middle lg:pl-[165px] lg:w-[50%];
+  }
+
+  .title {
+    @apply text-[#151515] pb-[1rem] mx-auto font-bold text-[2.25rem] leading-[2.625rem] lg:leading-[80px] lg:tracking-[-1.11px] tracking-[-0.5px] lg:text-left lg:m-0 lg:text-[80px] lg:max-w-[540px];
+  }
+
+  .text {
+    @apply lg:text-[18px] lg:leading-[28px] lg:max-w-[445px] text-base min-w-[348px] mx-auto text-[#686868] text-center pb-[1.5rem] lg:text-left lg:m-0;
+  }
+  .main-content-btn {
+    @apply bg-[#151515] mx-auto rounded-lg text-[#FAFAFA] w-[136px] h-[48px] lg:m-0;
+  }
+
+  .partners {
+    @apply mx-auto pt-[48px] pb-[94px] lg:m-0 lg:pt-[108px];
+  }
+
+  .partners-img {
+    @apply inline-block mx-auto;
+  }
+}
