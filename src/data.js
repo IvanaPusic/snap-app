@@ -2,11 +2,13 @@ import bell from './assets/bell.svg';
 import calendar from './assets/calendar.svg';
 import planning from './assets/planning.svg';
 import todo from './assets/todo.svg';
+import up from './assets/up.svg';
 
 export const links = [
   {
     id: 1,
     link: 'Features',
+    img: up,
     subLinks: [
       {
         id:1,
@@ -33,7 +35,8 @@ export const links = [
   {
     id:2, 
     link: 'Company',
-    sublinks:[
+    img: up,
+    subLinks:[
       {
         id:1,
         link: 'History',
